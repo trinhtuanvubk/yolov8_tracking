@@ -6,7 +6,9 @@ FROM nvcr.io/nvidia/pytorch:22.11-py3
 
 # Update image
 RUN apt update
-
+# vutt-update
+# RUN apt-get install wget cmake -y
+# RUN pip install python3-opencv libopencv-dev
 # Install pip packages
 COPY requirements.txt .
 RUN python -m pip install --upgrade pip setuptools wheel

@@ -8,6 +8,7 @@ __pycache__/
 runs/
 videos/
 weights
+test_images/
 
 # evaluation tools folder
 val_utils/

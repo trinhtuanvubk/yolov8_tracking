@@ -78,7 +78,7 @@ def run(
     save = True,
     save_txt = True,
     visualize=False,
-    plotted_img = False,
+    plotted_img = True,
     augment = False,
     conf = 0.5,
     device = '',
@@ -209,7 +209,6 @@ def run(
                         frame_idx,
                         i,
                     )
-
             # display an image in a window using OpenCV imshow()
             if show and plotted_img is not None:
                 predictor.show(p)
