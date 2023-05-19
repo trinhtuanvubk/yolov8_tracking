@@ -1,7 +1,8 @@
 python track.py --yolo-model weights/yolov8n-seg.pt \
 --tracking-method deepocsort \
 --name test_trafic \
---source test_data/road_trafic.mp4 \
+--source test_data/fiveminroadtrafic.mp4 \
+--classes 0 1 2 3 5 6 7 \
 --save \
 
 
