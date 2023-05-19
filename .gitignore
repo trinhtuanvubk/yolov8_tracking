@@ -9,6 +9,7 @@ runs/
 videos/
 weights
 test_images/
+*.mp4
 
 # evaluation tools folder
 val_utils/
