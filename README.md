@@ -30,13 +30,26 @@ This repository contains a highly configurable two-stage-tracker that adjusts to
 Everything is designed with simplicity and flexibility in mind. We don't hyperfocus on results on a single dataset, we prioritize real-world results. If you don't get good tracking results on your custom dataset with the out-of-the-box tracker configurations, use the `evolve.py` script for tracker hyperparameter tuning.
 
 ## Installation
-
+Install with pip:
 ```
 git clone https://github.com/mikel-brostrom/yolov8_tracking.git
 cd yolov8_tracking
 pip install -r requirements.txt  # install dependencies
 ```
-
+Install with Docker:
+```
+git clone https://github.com/mikel-brostrom/yolov8_tracking.git
+cd yolov8_tracking
+docker build -t <image-tag-name> .
+docker run --restart always -itd -v $(pwd):/yolo8-tracking --name <container-name> -w/yolo8-tracking <image-tag-name>
+```
+If you get errors raised by opencv and ffmpeg, you can pull this image:
+```
+git clone https://github.com/mikel-brostrom/yolov8_tracking.git
+cd yolov8_tracking
+docker pull trinhtuanvubk/vutt-yolo8-opencv
+docker run --restart always -itd -v $(pwd):/yolo8-tracking --name <container-name> -w/yolo8-tracking trinhtuanvubk/vutt-yolo8-opencv:tracking
+```
 <details>
 <summary>Tutorials</summary>
 
