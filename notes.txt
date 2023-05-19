@@ -21,8 +21,9 @@ Dataset:
     https://universe.roboflow.com/roboflow-100/vehicles-q0x2v
 
 
+    https://github.com/hunjung-lim/awesome-vehicle-datasets/tree/master/vehicle
 
-
+    MotChallenge2DBox
 
 Others: 
     https://universe.roboflow.com/browse/transportation/cars
